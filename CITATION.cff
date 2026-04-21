@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or the HNC pre-registration, please cite as below."
+title: "Hierarchical Neural Collapse: Pre-registered experimental bundle (Paper P1)"
+version: "v1.0-preregister"
+date-released: "2026-04-20"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/expelius/hnc-paper-p1"
+url: "https://osf.io/hkt6c/"
+keywords:
+  - neural collapse
+  - language models
+  - hierarchical representations
+  - persistent homology
+  - pre-registration
+  - byte-level modeling
+  - isotropic vector matrix
+authors:
+  - family-names: Zuluaga-Monroy
+    given-names: Juan David
+    orcid: "https://orcid.org/0000-0002-9865-471X"
+    affiliation: "Independent Researcher (Interventional Cardiology)"
+  - family-names: Zuluaga-Monroy
+    given-names: Diego Fernando
+    orcid: "https://orcid.org/0009-0007-8935-169X"
+    affiliation: "Independent Researcher (Electronic Engineering)"
+preferred-citation:
+  type: generic
+  title: "Hierarchical Neural Collapse: An Intrinsic 60° Angular Signature in Multi-Scale Byte-Level Language Models (Pre-registration)"
+  year: 2026
+  authors:
+    - family-names: Zuluaga-Monroy
+      given-names: Juan David
+      orcid: "https://orcid.org/0000-0002-9865-471X"
+    - family-names: Zuluaga-Monroy
+      given-names: Diego Fernando
+      orcid: "https://orcid.org/0009-0007-8935-169X"
+  doi: "10.5281/zenodo.[PENDING]"

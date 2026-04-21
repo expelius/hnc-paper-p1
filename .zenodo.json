@@ -1,0 +1,42 @@
+{
+  "title": "Hierarchical Neural Collapse: Pre-registered experimental bundle (Paper P1)",
+  "description": "<p>Code, pre-registration, and shuffled evaluation corpora for the paper <em>Hierarchical Neural Collapse: An Intrinsic 60&deg; Angular Signature in Multi-Scale Byte-Level Language Models</em>.</p><p>This Zenodo release is the immutable snapshot that the OSF pre-registration (<a href='https://osf.io/hkt6c/'>osf.io/hkt6c</a>) points to. Predictions P-C1..P-A5 (see <code>LINEAS CONSOLIDADAS DE TRABAJO/OSF-PREREG-P1.md</code>) were frozen prior to running the experiments A2, A3, and P1-TRCTRL.</p><p>Includes: statistical utilities (<code>stats_helpers.py</code>), corpus generator with fixed seed (<code>prep_shuffle_corpus.py</code>, SEED=20260420), three shuffled WikiText-103 validation corpora (paragraph / sentence / word level), and the pre-registered experimental scripts.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "Apache-2.0",
+  "keywords": [
+    "neural collapse",
+    "language models",
+    "hierarchical representations",
+    "persistent homology",
+    "pre-registration",
+    "byte-level modeling",
+    "reproducibility",
+    "isotropic vector matrix"
+  ],
+  "creators": [
+    {
+      "name": "Zuluaga-Monroy, Juan David",
+      "affiliation": "Independent Researcher (Interventional Cardiology)",
+      "orcid": "0000-0002-9865-471X"
+    },
+    {
+      "name": "Zuluaga-Monroy, Diego Fernando",
+      "affiliation": "Independent Researcher (Electronic Engineering)",
+      "orcid": "0009-0007-8935-169X"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/expelius/hnc-paper-p1",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://osf.io/hkt6c/",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    }
+  ],
+  "communities": []
+}
