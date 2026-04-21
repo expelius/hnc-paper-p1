@@ -77,8 +77,8 @@ Esta desviación cumple con §5 del pre-registro ("Desviaciones permitidas del p
 
 ## 7. Artefactos publicados con esta corrección
 
-- Nuevo tag de release: `v1.0.1-data-correction` (commit `[TBD]`).
-- Zenodo DOI nuevo: `[TBD, se actualiza este documento al publicar]`.
+- Nuevo tag de release: `v1.0.1-data-correction` (commit `f29e895`).
+- Zenodo DOI nuevo: [10.5281/zenodo.19687612](https://doi.org/10.5281/zenodo.19687612).
 - Archivos actualizados:
   - `LINEAS DE INVESTIGACIÓN/LINEA A/FASE 5/prep_shuffle_corpus.py`
   - `data/wikitext103_val_shuf_paragraph.txt`
