@@ -38,10 +38,13 @@ def load_src() -> str:
 
 
 def shuffle_paragraphs(text: str, rng: random.Random) -> str:
-    paras = re.split(r"\n\s*\n", text)
-    paras = [p.strip() for p in paras if p.strip()]
+    # WikiText-103 convention: each non-empty line is a paragraph. Blank
+    # lines between paragraphs do NOT occur in this corpus, so splitting on
+    # ``\n\s*\n`` collapses everything to a single paragraph (bug fixed
+    # 2026-04-20: earlier output was byte-identical to source).
+    paras = [ln for ln in text.split("\n") if ln.strip()]
     rng.shuffle(paras)
-    return "\n\n".join(paras) + "\n"
+    return "\n".join(paras) + "\n"
 
 
 def shuffle_sentences(text: str, rng: random.Random) -> str:
@@ -53,14 +56,19 @@ def shuffle_sentences(text: str, rng: random.Random) -> str:
 
 
 def shuffle_words_in_paragraphs(text: str, rng: random.Random) -> str:
-    out_paras = []
-    for p in re.split(r"\n\s*\n", text):
-        if not p.strip():
+    # WikiText-103 convention: each non-empty line is a paragraph. Shuffle
+    # words *within* each line (preserves paragraph / discourse order,
+    # destroys intra-paragraph syntax). Earlier implementation split on
+    # blank lines which collapses to a single global shuffle; here we use
+    # lines to match the same convention as shuffle_paragraphs.
+    out_lines = []
+    for ln in text.split("\n"):
+        if not ln.strip():
             continue
-        words = p.split()
+        words = ln.split()
         rng.shuffle(words)
-        out_paras.append(" ".join(words))
-    return "\n\n".join(out_paras) + "\n"
+        out_lines.append(" ".join(words))
+    return "\n".join(out_lines) + "\n"
 
 
 def main():
